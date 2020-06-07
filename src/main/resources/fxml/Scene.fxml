@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="it.polito.tdp.porto.FXMLController">
+  <center>
+    <VBox prefHeight="200.0" prefWidth="100.0">
+      <children>
+        <HBox prefHeight="50.0" prefWidth="200.0">
+          <children>
+            <Label text="Matricola autore" />
+            <TextField fx:id="txtIdCreator" prefWidth="200.0">
+              <HBox.margin>
+                <Insets left="10.0" right="10.0" fx:id="x1" />
+              </HBox.margin>
+            </TextField>
+            <Button fx:id="btnCercaArticoli" mnemonicParsing="false" text="Cerca articoli" />
+          </children>
+        </HBox>
+        <HBox prefHeight="50.0" prefWidth="200.0">
+          <children>
+            <Label text="EprintID articolo" />
+            <TextField fx:id="txtIdArticolo" prefWidth="200.0" HBox.margin="$x1" />
+            <Button fx:id="btnCercaArticolo" mnemonicParsing="false" text="Cerca revisori" />
+          </children>
+        </HBox>
+        <TextArea fx:id="txtResult" editable="false" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: lightgrey ;" text="Output..." wrapText="true">
+          <effect>
+            <DropShadow color="#646464" offsetX="5.0" offsetY="5.0" />
+          </effect>
+        </TextArea>
+      </children>
+    </VBox>
+  </center>
+  <top>
+    <Label text="Peer review" textAlignment="CENTER" textFill="RED" BorderPane.alignment="CENTER">
+      <font>
+        <Font size="24.0" />
+      </font>
+    </Label>
+  </top>
+</BorderPane>
